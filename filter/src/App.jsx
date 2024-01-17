@@ -21,6 +21,9 @@ function App() {
   };
   return (
     <>
+      <h1 className="text-center p-10 text-4xl text underline">
+        Crypto filter
+      </h1>
       <form className="w-auto m-auto p-10" onSubmit={Submit}>
         <label
           for="search"
@@ -105,7 +108,7 @@ function App() {
                       {val.rank}
                     </th>
                     <td class="px-3 py-6 object-fit w-auto text-center ">
-                      <a href={val.websiteUrl} target="_blank" >
+                      <a href={val.websiteUrl} target="_blank">
                         {" "}
                         <img src={val.icon} alt="" />
                         <p>{val.name}</p>
